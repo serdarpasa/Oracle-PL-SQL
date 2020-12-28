@@ -1,0 +1,31 @@
+/*
+Write a program to perform below steps
+? Declare a variable
+? If the variable value is 1 then display values from 300 to 400 using a WHILE loop
+? If the variable value is 2 then display values from 400 to 800 using a FOR loop
+? If the variable value is 3 then just display “wrong choice
+*/
+
+DECLARE
+CHOICE NUMBER:=2;
+I NUMBER:=300;
+J NUMBER;
+BEGIN
+IF CHOICE = 1 THEN
+WHILE I <= 400
+LOOP
+DBMS_OUTPUT.PUT_LINE
+(I);
+I:=I+1;
+END LOOP;
+ELSIF CHOICE = 2 THEN
+FOR J IN 400..800
+LOOP
+DBMS_OUTPUT.PUT_LINE
+(J);
+END LOOP;
+ELSIF CHOICE = 3 THEN
+DBMS_OUTPUT.PUT_LINE
+('Wrong Choice');
+END IF;
+END;

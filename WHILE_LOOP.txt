@@ -1,0 +1,11 @@
+-- Write a program to display values from 200 to 300 using a WHILE 
+DECLARE
+  CNTR number := 200;
+BEGIN
+  WHILE CNTR  <= 300
+  LOOP
+     dbms_output.put_line('value of CNTR: ' || CNTR);
+     CNTR := CNTR + 1;
+  END LOOP;
+END;
+/

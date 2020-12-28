@@ -1,0 +1,50 @@
+DECLARE
+   SAL number := 10000;
+   
+BEGIN
+  
+  IF
+    SAL > 10000
+   then
+   dbms_output.put_line
+   ('Grade A');
+   elsif SAL >= 50000 and SAL <= 100000
+   then
+   dbms_output.put_line
+   ('Grade B');
+   elsif  SAL >= 25000 and SAL <= 50000
+   then
+    dbms_output.put_line
+    ('Grade C');
+    elsif  SAL >= 10000 and  SAL <= 25000
+    then
+    dbms_output.put_line
+    ('Grade D');
+    else
+    dbms_output.put_line
+    ('Grade E');
+   end IF;
+   
+
+END;
+
+DECLARE
+SAL NUMBER := 10000;
+BEGIN
+IF SAL > 100000 THEN
+DBMS_OUTPUT.PUT_LINE
+('Grade A');
+ELSIF SAL BETWEEN 50000 AND 100000 THEN
+DBMS_OUTPUT.PUT_LINE
+('Grade B');
+ELSIF SAL BETWEEN 25000 AND 50000 THEN
+DBMS_OUTPUT.PUT_LINE
+('Grade C');
+ELSIF SAL BETWEEN 10000 AND 25000 THEN
+DBMS_OUTPUT.PUT_LINE
+('Grade D');
+ELSE
+DBMS_OUTPUT.PUT_LINE
+('Grade E');
+END IF;
+END;

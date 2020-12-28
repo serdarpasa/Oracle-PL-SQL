@@ -1,0 +1,11 @@
+-- Write a program to display values from 200 to 300 using a FOR loop
+DECLARE
+  CNTR number:= 200;
+  
+BEGIN
+  FOR CNTR IN   200..300
+  LOOP
+    DBMS_output.put_line('value of CNTR: ' || CNTR);
+  END LOOP;
+END;
+/

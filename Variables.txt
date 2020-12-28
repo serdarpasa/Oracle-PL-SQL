@@ -1,0 +1,16 @@
+DECLARE
+-- variable section
+A number:=25;
+B varchar2(25):= 'Pavel';
+C date:= to_date('20-01-87', 'DD-MM-YY');
+BEGIN
+/*
+this is a multil line comment
+we can write what we are doing in the program
+*/
+  
+  dbms_output.put_line(A);
+  dbms_output.put_line(B);
+  dbms_output.put_line(C);
+  
+END;
